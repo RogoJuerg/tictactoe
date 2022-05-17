@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./style.css">
 
     <title>TicTacToe</title>
 </head>
+
 <body>
+    <img class="game-over d-none" id="game-over" src="./img/game-over.png">
+    <button class="restart-btn d-none" id="restart-btn" onclick="restart()">Restart</button>
+    <div class="player-panel">
+        <div id="player-1" class="player-inactive">
+            <img src="./img/circle.png">Player 1
+        </div>
+        <div id="player-2">
+            <img src="./img/cross.png">Player 2
+        </div>
+    </div>
+
+    <div id="line-0" class="horizontal-line" style="top: 162px;"></div>
+    <div id="line-1" class="horizontal-line" style="top: 302px;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 442px;"></div>
+    <div id="line-3" class="horizontal-line make-vertical" style="top: 302px; left: 192px;"></div>
+    <div id="line-4" class="horizontal-line make-vertical" style="top: 302px;"></div>
+    <div id="line-5" class="horizontal-line make-vertical" style="top: 302px; left: 482px;"></div>
+    <div id="line-6" class="horizontal-line" style="top: 302px; transform: rotate(45deg) scaleX(0.0);"></div>
+    <div id="line-7" class="horizontal-line" style="top: 302px; transform: rotate(-45deg) scaleX(0.0);"></div>
+
+
 
     <table>
         <tr>
@@ -54,6 +77,7 @@
     </table>
 
 
-    
+
 </body>
+
 </html>
